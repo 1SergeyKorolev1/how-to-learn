@@ -1,3 +1,6 @@
+* {
+  margin: 0;
+}
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -6,7 +9,7 @@
 }
 /* НАЧАЛО HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .header {
-  border: 1px solid #f00;
+  background-color: #f2f2f2;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -67,33 +70,22 @@
   display: flex;
 }
 /* НАЧАЛО СЕКЦИИ DESCRIPTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.description {
-  border: 1px solid #f00;
-  height: 70vh;
-}
 .description__two-colums {
   width: 80%;
   height: auto;
   max-height: 370px;
   min-height: auto;
-  margin: 100px auto;
+  margin: 100px auto 0;
   justify-content: space-between;
-  border: 1px solid #f00;
 }
 .description__two-colums_brief {
   width: 175px;
-  border: 1px solid #f00;
   color: #2f80ed;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.2;
 }
-.two-colums_brief_text {
-  border: 1px solid #f00;
-  margin: 0;
-}
 .description__two-colums_main-text {
-  border: 1px solid #f00;
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
@@ -102,27 +94,185 @@
   line-height: 34px;
   font-weight: normal;
 }
-.two-colums__paragraph_1 {
-  border: 1px solid #f00;
-  margin: 0;
-}
-.two-colums__paragraph_3 {
-  margin: 0;
-  border: 1px solid #f00;
-}
-.two-colums__paragraph_2 {
-  border: 1px solid #f00;
-  margin: 0;
-}
 .two-colums_span-accent {
   font-weight: bold;
 }
+.bottom {
+  margin-bottom: 30px;
+}
 /* КОНЕЦ СЕКЦИИ DESCRIPTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-/* и элемента с модификатором вида ключ-значение */
-/* .table__cell_theme_dark {
-  width: 200px;
+/* НАЧАЛО СЕКЦИИ DIGITS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.digits {
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+}
+.digits__section-title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+  width: 60%;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.digits__section-subtitle {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  width: 60%;
+  text-align: center;
+  z-index: 1;
+}
+.digits__table {
+  width: 1100px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 1;
+}
+.digits__table_cell {
+  margin-top: 60px;
+  width: 250px;
+}
+.digits__table_cell_text {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+.digits__table_cell_heading {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+/* КОНЕЦ СЕКЦИИ DIGITS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* НАЧАЛО СЕКЦИИ FEYNMAN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.feynman {
+  background-color: #f2f2f2;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 890px;
+}
+.feynman__title {
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.15;
+  width: 648px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  z-index: 1;
+}
+.feynman__subtitle {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  z-index: 1;
+}
+.feynman__link {
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 48px;
+  z-index: 1;
+}
+.none {
+  color: #2f80ed;
+  text-decoration: none;
+}
+.feynman__image {
+  width: 867px;
+  height: 637px;
+  background-image: url(/images/feynman.png);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+/* КОНЕЦ СЕКЦИИ FEYNMAN !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* НАЧАЛО СЕКЦИИ kaufman !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.kaufman {
+  position: relative;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.theme-dark {
   color: white;
-  margin-right: 0;
+}
+.theme-dark_size {
   margin-top: 80px;
-} */
+  width: 200px;
+}
+.kaufman_triangle {
+  width: 877px;
+  height: 877px;
+  background-image: url(/images/kaufman-triangle.svg);
+  background-size: cover;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: 0;
+}
+/* КОНЕЦ СЕКЦИИ kaufman !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* НАЧАЛО БЛОКА FOOTER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.footer {
+  background-color: #1f1f1f;
+  min-height: 350px;
+}
+.footer__columns {
+  width: 90%;
+  margin: 60px auto 40px auto;
+  justify-content: space-between;
+}
+.footer__columns-content_copyright {
+  width: 50%;
+  position: relative;
+}
+.footer__logo {
+  width: 228px;
+  height: 32px;
+  background-image: url(/images/logo_place_footer.svg);
+}
+.footer_author {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  position: absolute;
+  bottom: 0;
+}
+.footer__column-links {
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.footer__column-link {
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.none-decor_font {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+}
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
