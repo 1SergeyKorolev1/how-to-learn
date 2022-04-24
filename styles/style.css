@@ -258,7 +258,7 @@
 }
 .footer__column_content_copyright {
   display: flex;
-  width: 50%;
+  flex-basis: 711px;
   position: relative;
   flex-direction: column;
   justify-content: space-between;
