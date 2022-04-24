@@ -25,10 +25,9 @@
   z-index: 5;
 }
 .header__title {
-  margin: 0;
+  margin: 0 0 0 64px;
   display: flex;
   align-items: center;
-  margin-left: 64px;
   max-width: 730px;
   font-size: 102px;
   font-weight: bold;
@@ -60,7 +59,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  object-fit: contain;
+  object-fit: cover;
   z-index: 2;
 }
 .header__link {
@@ -72,14 +71,14 @@
 }
 /* КОНЕЦ HEADER !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* НАЧАЛО СЕКЦИИ DESCRIPTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.two-colums {
+.two-columns {
   display: flex;
   width: 80%;
   height: auto;
   margin: 100px auto 0;
   justify-content: space-between;
 }
-.two-colums__brief {
+.two-columns__brief {
   margin: 0;
   width: 175px;
   color: #2f80ed;
@@ -87,7 +86,7 @@
   font-size: 18px;
   line-height: 1.2;
 }
-.two-colums__main-text {
+.two-columns__main-text {
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
@@ -96,7 +95,7 @@
   line-height: 34px;
   font-weight: normal;
 }
-.two-colums__span-accent {
+.two-columns__span-accent {
   font-weight: bold;
 }
 .two-columns__paragraph {
@@ -115,13 +114,12 @@
   margin: 100px auto;
 }
 .section-title {
-  margin: 0;
+  margin: 0 0 20px 0;
   font-size: 60px;
   font-weight: bold;
   line-height: 1.15;
   width: 60%;
   text-align: center;
-  margin-bottom: 20px;
   z-index: 1;
 }
 .section-subtitle {
@@ -145,8 +143,7 @@
   width: 250px;
 }
 .table__text {
-  margin: 0;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
@@ -266,7 +263,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.logo__place_footer {
+.logo_place_footer {
   background-image: url(/images/logo_place_footer.svg);
 }
 .footer__author {
