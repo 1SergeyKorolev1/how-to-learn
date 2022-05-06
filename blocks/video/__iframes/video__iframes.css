@@ -1,7 +1,11 @@
+:root {
+  --width-prim: 516px;
+}
 .video__iframes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1050px;
+  /* width: 1050px; */
+  width: calc(20px + var(--width-prim) * 2);
   margin-top: 50px;
 }
