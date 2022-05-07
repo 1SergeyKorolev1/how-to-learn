@@ -6,6 +6,6 @@
   font-weight: normal;
 }
 .footer__column-link:hover {
-  color: rgba(0, 255, 255, 0.416);
-  transition: color 1s linear;
+  color: rgba(37, 103, 103, 0.416);
+  transition: color 0.5s linear;
 }
