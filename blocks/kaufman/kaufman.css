@@ -7,4 +7,6 @@
   align-items: center;
   padding-top: 90px;
   padding-bottom: 90px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }

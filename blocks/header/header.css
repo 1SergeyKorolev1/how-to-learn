@@ -6,4 +6,6 @@
   min-height: 600px;
   max-height: 756px;
   overflow: hidden;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
